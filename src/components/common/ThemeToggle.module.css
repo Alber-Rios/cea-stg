@@ -1,0 +1,77 @@
+.themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.themeToggle:hover {
+    transform: scale(1.05);
+}
+
+.toggleTrack {
+    width: 60px;
+    height: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggleTrack.dark {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.toggleThumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark .toggleThumb {
+    transform: translateX(30px);
+    background: #2d2d2d;
+}
+
+.icon {
+    font-size: 14px;
+    color: #ffa500;
+    transition: all 0.3s ease;
+}
+
+.dark .icon {
+    color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    .toggleTrack {
+        width: 50px;
+        height: 26px;
+    }
+
+    .toggleThumb {
+        width: 20px;
+        height: 20px;
+    }
+
+    .dark .toggleThumb {
+        transform: translateX(24px);
+    }
+
+    .icon {
+        font-size: 12px;
+    }
+}

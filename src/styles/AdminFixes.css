@@ -1,0 +1,217 @@
+/* ===== CORRECCIONES DE VISIBILIDAD DE TEXTO ===== */
+
+/* Dashboard - Header mejorado */
+.dashboard-header h1 {
+    color: #2d5016 !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dashboard-header p {
+    color: #555 !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Dashboard - Tarjetas de estadísticas */
+.stat-info h3 {
+    color: #333 !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    color: #2d5016 !important;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stat-link {
+    color: #4a7c2c !important;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+/* Dashboard - Sección de acciones rápidas */
+.quick-actions h2 {
+    color: #2d5016 !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.action-card h3 {
+    color: #2d5016 !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.action-card p {
+    color: #555 !important;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Tablas - Gestión de puntos y eventos */
+.data-table th {
+    color: #2d5016 !important;
+    font-weight: 700;
+}
+
+.data-table td {
+    color: #333 !important;
+}
+
+.data-table .coordinates {
+    color: #666 !important;
+}
+
+/* Tarjetas de eventos */
+.event-card h3 {
+    color: #2d5016 !important;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.event-date {
+    color: #666 !important;
+    font-size: 0.95rem;
+}
+
+.event-description {
+    color: #555 !important;
+    line-height: 1.6;
+}
+
+.event-location {
+    color: #666 !important;
+}
+
+/* Headers de páginas de gestión */
+.manager-header h1 {
+    color: #2d5016 !important;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Formularios */
+.form-card h2 {
+    color: #2d5016 !important;
+    font-weight: 700;
+}
+
+.form-group label {
+    color: #333 !important;
+    font-weight: 600;
+}
+
+/* Estado vacío */
+.empty-state {
+    color: #999 !important;
+}
+/* Sección de Migración de Datos */
+.migration-section {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-top: 40px;
+}
+
+.migration-section h2 {
+    color: #2d5016 !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.migration-section p {
+    color: #555 !important;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.migration-section button,
+.migration-section .btn-primary {
+    background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 100%);
+    color: white !important;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(74, 124, 44, 0.3);
+}
+
+.migration-section button:hover,
+.migration-section .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 124, 44, 0.4);
+}
+
+.migration-section button:active,
+.migration-section .btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Sección de acciones - Nuevo diseño */
+.action-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.action-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.action-section .action-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.action-section h3 {
+    color: #2d5016 !important;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 100%);
+    color: white !important;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(74, 124, 44, 0.3);
+}
+
+.action-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 124, 44, 0.4);
+    color: white !important;
+}
+
+.action-button:active {
+    transform: translateY(0);
+}

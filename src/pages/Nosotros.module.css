@@ -1,0 +1,28 @@
+.nosotros {
+    width: 100%;
+}
+
+.contentSection {
+    padding: 50px 5%;
+    background-color: var(--card-bg);
+    margin: 40px 5%;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+/* Modo oscuro para página Nosotros */
+[data-theme="dark"] .contentSection {
+    background-color: #2a2a2a !important;
+}
+
+[data-theme="dark"] .contentSection p {
+    color: #ddd !important;
+}
+
+[data-theme="dark"] .contentSection h2 {
+    color: #fff !important;
+}
+
+[data-theme="dark"] .contentSection strong {
+    color: #9CCC65 !important;
+}

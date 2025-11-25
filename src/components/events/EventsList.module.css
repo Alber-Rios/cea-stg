@@ -1,0 +1,171 @@
+.eventsList {
+    flex: 2;
+}
+
+.eventItem {
+    display: flex;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    background-color: #ffffff;
+    /* Fondo blanco por defecto */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .eventItem {
+    background-color: #222222;
+    /* Fondo oscuro en modo oscuro */
+    border: 1px solid #444;
+}
+
+.eventItem:hover {
+    background-color: #f9f9f9;
+    border-color: #7aba48;
+    transform: translateX(10px);
+}
+
+[data-theme="dark"] .eventItem:hover {
+    background-color: #333;
+    border-color: #9CCC65;
+}
+
+.eventDate {
+    margin-right: 25px;
+    min-width: 80px;
+    text-align: center;
+    padding-right: 20px;
+    border-right: 2px solid #7aba48;
+}
+
+[data-theme="dark"] .eventDate {
+    border-right: 2px solid #9CCC65;
+}
+
+.eventDate .day {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #333333;
+    line-height: 1;
+}
+
+[data-theme="dark"] .eventDate .day {
+    color: #ffffff;
+}
+
+.eventDate .month {
+    font-size: 0.85rem;
+    color: #666666;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5px;
+    display: block;
+    letter-spacing: 1px;
+}
+
+[data-theme="dark"] .eventDate .month {
+    color: #cccccc;
+}
+
+.eventInfo h4 {
+    margin-bottom: 8px;
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+[data-theme="dark"] .eventInfo h4 {
+    color: #ffffff;
+}
+
+.eventInfo p {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.5;
+}
+
+[data-theme="dark"] .eventInfo p {
+    color: #dddddd;
+}
+
+.btnRegister {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 15px;
+    background-color: #7aba48;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.btnRegister:hover {
+    background-color: #5a8c35;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(122, 186, 72, 0.4);
+}
+
+@media (max-width: 768px) {
+    .btnRegister {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .eventItem {
+        flex-direction: column;
+    }
+
+    .eventDate {
+        border-right: none;
+        border-bottom: 2px solid #7aba48;
+        padding-right: 0;
+        padding-bottom: 15px;
+        margin-right: 0;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    [data-theme="dark"] .eventDate {
+        border-bottom: 2px solid #9CCC65;
+    }
+}
+
+/* Skeleton Loading */
+.skeleton {
+    background-color: #f0f0f0;
+    border-color: #e0e0e0;
+}
+
+[data-theme="dark"] .skeleton {
+    background-color: #333;
+    border-color: #444;
+}
+
+.skeletonBox {
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+}
+
+[data-theme="dark"] .skeletonBox {
+    background: linear-gradient(90deg, #444 25%, #555 50%, #444 75%);
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
