@@ -16,6 +16,7 @@ import UnifiedLogin from './components/auth/UnifiedLogin';
 import Dashboard from './pages/admin/Dashboard';
 import RecyclingPointsManager from './pages/admin/RecyclingPointsManager';
 import EventsManager from './pages/admin/EventsManager';
+import MessagesManager from './pages/admin/MessagesManager';
 
 // Layout y Componentes
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -116,6 +117,7 @@ function App() {
                             <Route path="dashboard" element={<Dashboard />} />
                             <Route path="recycling-points" element={<RecyclingPointsManager />} />
                             <Route path="events" element={<EventsManager />} />
+                            <Route path="messages" element={<MessagesManager />} />
                         </Route>
                     </Routes>
                 </Router>

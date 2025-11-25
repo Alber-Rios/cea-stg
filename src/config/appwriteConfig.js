@@ -13,5 +13,6 @@ export const databases = new Databases(client);
 export const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
 export const RECYCLING_COLLECTION_ID = import.meta.env.VITE_APPWRITE_RECYCLING_COLLECTION_ID;
 export const EVENTS_COLLECTION_ID = import.meta.env.VITE_APPWRITE_EVENTS_COLLECTION_ID;
+export const MESSAGES_COLLECTION_ID = import.meta.env.VITE_APPWRITE_MESSAGES_COLLECTION_ID;
 
 export default client;

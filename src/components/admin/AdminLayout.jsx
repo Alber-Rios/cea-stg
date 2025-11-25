@@ -16,7 +16,8 @@ const AdminLayout = () => {
     const menuItems = [
         { path: '/admin/dashboard', label: 'Dashboard', icon: '📊' },
         { path: '/admin/recycling-points', label: 'Puntos de Reciclaje', icon: '♻️' },
-        { path: '/admin/events', label: 'Eventos', icon: '📅' }
+        { path: '/admin/events', label: 'Eventos', icon: '📅' },
+        { path: '/admin/messages', label: 'Mensajes', icon: '💬' }
     ];
 
     return (

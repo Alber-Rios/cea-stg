@@ -1,0 +1,122 @@
+/* ===== MENSAJES DE CONTACTO ===== */
+.filter-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn-filter {
+    padding: 10px 20px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+.btn-filter:hover {
+    border-color: #4a7c2c;
+    color: #4a7c2c;
+}
+
+.btn-filter.active {
+    background: #4a7c2c;
+    border-color: #4a7c2c;
+    color: white;
+}
+
+.messages-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.message-card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #e0e0e0;
+}
+
+.message-card.unread {
+    border-left-color: #4a7c2c;
+    background: #f8fff8;
+}
+
+.message-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    gap: 16px;
+}
+
+.message-info h3 {
+    color: #2d5016;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.message-email {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.message-date {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.message-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-mark-read,
+.btn-mark-unread {
+    font-size: 1.3rem;
+}
+
+.message-content {
+    color: #444;
+    line-height: 1.6;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.message-content p {
+    margin: 0;
+}
+
+.successMessage,
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+.errorMessage,
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-left: 4px solid #dc3545;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}

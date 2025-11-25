@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaBars, FaUser, FaSignOutAlt } from 'react-icons/fa';
 import { useAuth } from '../../hooks/useAuth';
@@ -7,8 +7,22 @@ import styles from './Header.module.css';
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const { user, logout, userRole } = useAuth();
     const navigate = useNavigate();
+
+    // Detectar scroll para cambiar el estilo del header
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 50;
+            if (isScrolled !== scrolled) {
+                setScrolled(isScrolled);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [scrolled]);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -31,7 +45,7 @@ function Header() {
     };
 
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
             <nav className={styles.nav}>
                 <Link to="/" className={styles.logo} onClick={closeMenu}>CEA</Link>
                 <FaBars className={styles.menuToggle} id="menuToggle" onClick={toggleMenu} />
