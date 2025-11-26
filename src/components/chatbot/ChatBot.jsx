@@ -16,7 +16,6 @@ function ChatBot() {
 
     const MENU_OPTIONS = [
         "♻️ Qué Recibimos",
-        "🗺️ Puntos de Reciclaje",
         "📅 Próximos Eventos",
         "🕒 Horarios",
         "📍 Dirección CEA"
@@ -70,16 +69,7 @@ function ChatBot() {
                 + `</ul>`
                 + `</div></div>`;
         }
-        // Puntos de Reciclaje
-        if (input === "🗺️ Puntos de Reciclaje" || ["mapa", "puntos", "lugares", "ubicacion"].some(k => text.includes(k))) {
-            return `<div class="${styles.chatInfoCard}">`
-                + `<div class="${styles.chatCardHeader}">🗺️ Red de Puntos Limpios</div>`
-                + `<div class="${styles.chatCardBody}">`
-                + `<p>Además del CEA, existen varios puntos en la comuna.</p>`
-                + `<p>Puedes revisar el mapa interactivo para encontrar el más cercano a tu hogar.</p>`
-                + `<a href="/proyectos#seccion-mapa" class="${styles.btnInscripcion}">📍 Ver Mapa de Puntos</a>`
-                + `</div></div>`;
-        }
+
         // Eventos
         if (input === "📅 Próximos Eventos" || ["taller", "curso", "charla", "evento", "actividad", "agenda"].some(k => text.includes(k))) {
             const eventos = getEventosFromAppwrite();
